@@ -19,11 +19,6 @@ function App() {
     }
   }
 
-  if (data.main.temp -= 50){
-    document.getElementById("app").background= url("./assets/24243.jpeg");
-
-  }
-  
   return (
     <div className="app">
       <div className = "search">
@@ -48,7 +43,7 @@ function App() {
           {data.weather ? <p>{data.weather[0].temp}</p>: null}          </div>
         </div>
 
-        {data.name !== undefined &&
+       {data.name !== undefined &&
         <div className = "bottom">
           <div className="feels">
             {data.main ? <p className='bold'>{data.main.feels_like.toFixed()}°F</p> : null}
@@ -63,7 +58,7 @@ function App() {
            <p>Wind Speed</p>
           </div>
         </div>
-}
+        }
       </div>
     </div>
     
