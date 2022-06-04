@@ -19,10 +19,11 @@ function App() {
     }
   }
 
-  //if ({data.weather[0].temp} -= 50){
-    //document.getElementById("app:before).background= url("./assets/24243.jpeg");
+  if (data.main.temp -= 50){
+    document.getElementById("app").background= url("./assets/24243.jpeg");
 
-  //}
+  }
+  
   return (
     <div className="app">
       <div className = "search">
